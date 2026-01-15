@@ -33,12 +33,11 @@ public class Complaint {
 
     @ManyToOne
     @JoinColumn(name = "department_id")
-    private Department department;
+    private Long department_id;
 
     @ManyToOne
     @JoinColumn(name = "assigned_to")
     private User assignedTo;   //staff
-
 
     private LocalDateTime createdAt;
 
